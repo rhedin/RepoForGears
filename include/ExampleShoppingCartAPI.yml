@@ -1,0 +1,34 @@
+Alias: ExampleShoppingCartAPI
+Version:
+- 1
+DependsOn:
+- Name: CoreAPI
+  Version: 6
+ItemOrdering:
+- Version: 1
+  Functions:
+  - AddItem
+Functions:
+- Name: "AddItem"
+  Version: "1"
+  Description:
+  - Adds an item to the shopping cart.
+  Return:
+    Type: "APIResult"
+    Description:
+    - The result of the function. See CoreAPI.h for information on each result.
+  Parameters:
+  - Name: "item_name"
+    Type: "char"
+    Pointer: true
+    ConstData: true
+    Description:
+    - The name of the item.
+    Annotation: "_In_"
+  - Name: "price"
+    Type: "float32_t"
+    Description:
+    - The price of the item.
+    Annotation: "_In_"
+ConvertedStructUnderscores: true
+ConvertedRequiredVersions: true

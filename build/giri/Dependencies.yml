@@ -1,0 +1,14 @@
+Repo: Gears
+Dependencies:
+- Group: Dependencies
+  Name: VSWhere
+  Version: 2.1.4
+- Group: Dependencies
+  Name: ComponentAPI
+  Version: 5
+- Group: Dependencies
+  Name: CoreAPI
+  Version: 6
+- Group: Dependencies
+  Name: GTest
+  Version: 1.6.1

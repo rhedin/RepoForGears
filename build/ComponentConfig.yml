@@ -1,0 +1,74 @@
+Name: ExampleShoppingCart
+GitRemoteUrl: https://gitlab.com/bisimulations/ExampleShoppingCart.git
+CreatedAPIs:
+- ExampleShoppingCartAPI
+ImplementedAPIs:
+- Name: ComponentAPI
+  Version: 5
+- Name: ExampleShoppingCartAPI
+  Version: 1
+Dependencies:
+- Project: Component
+  Type: DLL
+  Language: C++
+  Deploy: Component
+  ExtraWarnings: true
+  TreatWarningsAsErrors: true
+  GlobalDefinitions:
+  - Syntax: x64
+  - Syntax: _CRT_SECURE_NO_WARNINGS
+  - Syntax: _SCL_SECURE_NO_WARNINGS
+  DebugDefinitions:
+  - Syntax: DEBUG
+  ReleaseDefinitions:
+  - Syntax: NDEBUG
+  ReleaseWithSymbolsDefinitions: []
+  DependsOn:
+  - Name: Library
+  Dependencies:
+  - Name: ComponentAPI
+    Version: 5
+  UUID: e074f1b9-c66c-4507-a563-09605f4cff93
+- Project: Library
+  Type: LIB
+  Language: C++
+  LinkOptions: "/MACHINE:X64"
+  ExtraWarnings: true
+  TreatWarningsAsErrors: true
+  GlobalDefinitions:
+  - Syntax: x64
+  - Syntax: _CRT_SECURE_NO_WARNINGS
+  - Syntax: _SCL_SECURE_NO_WARNINGS
+  DebugDefinitions:
+  - Syntax: DEBUG
+  ReleaseDefinitions:
+  - Syntax: NDEBUG
+  ReleaseWithSymbolsDefinitions: []
+  Dependencies:
+  - Name: ComponentAPI
+    Version: 5
+  UUID: d05507b3-7ef8-459d-aac2-9f88cf6d3fc0
+- Project: UnitTest
+  Type: Console EXE
+  Language: C++
+  ExtraWarnings: true
+  TreatWarningsAsErrors: true
+  GlobalDefinitions:
+  - Syntax: x64
+  - Syntax: _CRT_SECURE_NO_WARNINGS
+  - Syntax: _SCL_SECURE_NO_WARNINGS
+  DebugDefinitions:
+  - Syntax: DEBUG
+  ReleaseDefinitions:
+  - Syntax: NDEBUG
+  ReleaseWithSymbolsDefinitions: []
+  DependsOn:
+  - Name: Library
+  Dependencies:
+  - Name: GTest
+    Version: 1.6.1
+  - Name: ComponentAPI
+    Version: 5
+  UUID: a64997cc-611c-499f-821d-7d9fece7cfe8
+YmlVersion: 2
+UsingPropertyFiles: true
