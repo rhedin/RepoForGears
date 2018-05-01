@@ -1,14 +1,5 @@
-/*
-*
-* Copyright(c) 2018 Bohemia Interactive Simulations, Inc.
-* http://www.bisimulations.com
-*
-* For information about the licensing and copyright of this software please
-* contact Bohemia Interactive Simulations, Inc. at contact @ bisimulations.com.
-*
-*/
-
-#pragma once
+#ifndef SHOPPINGCART_H
+#define SHOPPINGCART_H
 
 #include <string>
 #include <vector>
@@ -30,3 +21,5 @@ private:
 
   std::vector<Item> _items;
 };
+
+#endif

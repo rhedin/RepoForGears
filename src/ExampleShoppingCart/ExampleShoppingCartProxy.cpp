@@ -1,16 +1,3 @@
-/*
-*
-* Copyright(c) 2018 Bohemia Interactive Simulations, Inc.
-* http://www.bisimulations.com
-*
-* For information about the licensing and copyright of this software please
-* contact Bohemia Interactive Simulations, Inc. at contact @ bisimulations.com.
-*
-*/
-
-#include "ExampleShoppingCartProxy.h"
-#include "ExampleShoppingCart.h"
-
 /////////////////////////////////////
 /////////////////////////////////////
 /////////////////////////////////////
@@ -20,6 +7,9 @@
 /////////////////////////////////////
 /////////////////////////////////////
 /////////////////////////////////////
+
+#include "ExampleShoppingCartProxy.h"
+#include "ExampleShoppingCart.h"
 
 GEARS_EXPORT void GEARS_API RegisterAPI_v1(APIManager_RegisterAPI_Func_v1 register_api)
 {

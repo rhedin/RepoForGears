@@ -1,18 +1,3 @@
-/*
-*
-* Copyright(c) 2018 Bohemia Interactive Simulations, Inc.
-* http://www.bisimulations.com
-*
-* For information about the licensing and copyright of this software please
-* contact Bohemia Interactive Simulations, Inc. at contact @ bisimulations.com.
-*
-*/
-
-#ifndef EXAMPLESHOPPINGCART_API_H
-#define EXAMPLESHOPPINGCART_API_H
-
-#include <CoreAPI.h>
-
 /////////////////////////////////////
 /////////////////////////////////////
 /////////////////////////////////////
@@ -22,6 +7,11 @@
 /////////////////////////////////////
 /////////////////////////////////////
 /////////////////////////////////////
+
+#ifndef EXAMPLESHOPPINGCART_API_H
+#define EXAMPLESHOPPINGCART_API_H
+
+#include <CoreAPI.h>
 
 /**
  API Version:       ExampleShoppingCart API v1
