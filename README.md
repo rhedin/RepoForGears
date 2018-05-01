@@ -20,13 +20,15 @@ g_shopping_cart_api->AddItem("Chicken", 5.20f);
 
 In the tutorial, the console window will log calls to the API to let you know they're being called successfully.
 
-![ExampleMartConsole](/uploads/7a80adc7d5c9bbc8f8d72a6f1b0ceb4d/ExampleMartConsole.png)
+![ExampleMartConsole](/uploads/80626d10d4470da3f2b9242a532fe6b8/ExampleMartConsole.png)
 
 Gears Studio
 --------
+![GearsLogo](/uploads/0df62fb11daf6ee6673c5aaa5a1e8e5f/GearsStudioInstaller.bmp)
+
 The Gears framework and its companion tool Gears Studio were created to prevent common pitfalls and to automate common tasks encountered in software development. Gears uses a component-based architecture to promote rapid development by building applications from self-contained systems and having them communicate via formally defined interfaces. This allows functionality to be reused and avoids the complexity of tightly coupled systems. Gears provides the advantages of a component-based architecture while Gears Studio automates tasks to facilitate its implementation.
 
-![GearsLogo](/uploads/5ffb085d864084d667997a6614707ab7/GearsLogo.png) TODO :: Add link
+TODO :: Add link
 
 License
 --------
