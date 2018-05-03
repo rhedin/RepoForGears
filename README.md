@@ -28,7 +28,7 @@ Gears Studio
 
 The Gears framework and its companion tool Gears Studio were created to prevent common pitfalls and to automate common tasks encountered in software development. Gears uses a component-based architecture to promote rapid development by building applications from self-contained systems and having them communicate via formally defined interfaces. This allows functionality to be reused and avoids the complexity of tightly coupled systems. Gears provides the advantages of a component-based architecture while Gears Studio automates tasks to facilitate its implementation.
 
-For more information: [Gears Studio](https://gitlab.com/bisimulations/GearsStudio#gears-studio)
+For more information and to download Gears Studio: TODO :: Link to product page
 
 License
 --------
