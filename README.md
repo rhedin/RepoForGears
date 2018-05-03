@@ -1,4 +1,4 @@
-ExampleShoppingCart
+WIP: ExampleShoppingCart
 =============
 ExampleShoppingCart is an example Gears Component meant to be used with the tutorial found in the Gears Studio documentation. For more information and to download Gears Studio, see [Gears Studio](#gears-studio) below.
 
