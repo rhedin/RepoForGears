@@ -1,6 +1,6 @@
 ExampleShoppingCart
 =============
-ExampleShoppingCart is an example Gears Component meant to be used in conjunction with the Getting Started with Gears Studio tutorial found in the Gears Studio documentation. For more information and to download Gears Studio, see [Gears Studio](#gears-studio) below.
+ExampleShoppingCart is an example Gears Component meant to be used in conjunction with the "Getting Started with Gears Studio" tutorial found in the Gears Studio documentation. For more information and to download Gears Studio, see [Gears Studio](#gears-studio) below.
 
 This component is setup to simulate a basic shopping cart that users can interface with through its API, *ExampleShoppingCartAPI*. The initial API implementation only exposes one function, *AddItem*, which adds an item to the shopping cart. The tutorial instructions will explain how to implement additional API functionality. This includes calculating the total sum of items in the cart and clearing the cart of all items.
 
