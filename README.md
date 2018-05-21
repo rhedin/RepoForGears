@@ -35,4 +35,4 @@ For more information and to download Gears Studio: [www.gears.studio](http://www
 
 License
 --------
-TODO :: Add license
+This project is licensed under the [MIT License](/LICENSE).
