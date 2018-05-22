@@ -4,6 +4,6 @@
 # Manually modify MajorVersion and MinorVersion below to control the version embedded within the binary files.
 # The PatchVersion is automatically set and incremented by giri to ensure the full version number is always unique on Artifactory.
 
-MajorVersion: 1
-MinorVersion: 0
+MajorVersion: 18
+MinorVersion: 2
 #PatchVersion: Auto incremented by giri, not manually settable
