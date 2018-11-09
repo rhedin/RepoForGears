@@ -1,5 +1,5 @@
 Name: ExampleShoppingCart
-GitRemoteUrl: https://gitlab.com/bisimulations/ExampleShoppingCart.git
+GitRemoteUrl: ''
 CreatedAPIs:
 - ExampleShoppingCartAPI
 ImplementedAPIs:

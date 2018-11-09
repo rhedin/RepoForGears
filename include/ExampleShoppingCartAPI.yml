@@ -1,9 +1,11 @@
 Alias: ExampleShoppingCartAPI
 Version:
 - 1
-DependsOn:
-- Name: CoreAPI
-  Version: 6
+Includes:
+- Version: 1
+  Items:
+  - Name: CoreAPI
+    Version: 6
 ItemOrdering:
 - Version: 1
   Functions:
@@ -32,3 +34,4 @@ Functions:
     Annotation: "_In_"
 ConvertedStructUnderscores: true
 ConvertedRequiredVersions: true
+GeneratingSHA: true
