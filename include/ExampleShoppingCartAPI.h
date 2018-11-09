@@ -40,6 +40,8 @@ typedef struct ExampleShoppingCartAPI_v1
   ExampleShoppingCart_AddItem_Func_v1   AddItem;
 } ExampleShoppingCartAPI_v1;
 
+static const char* ExampleShoppingCartAPI_SHA_v1 = "18ba01c81fe81cc7579427af6ad219e12aa7e82d";
+
 static const char* ExampleShoppingCartAPI_Handle = "ExampleShoppingCartAPI";
 
 #endif
