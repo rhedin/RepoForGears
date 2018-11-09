@@ -5,5 +5,5 @@
 # The PatchVersion is automatically set and incremented by giri to ensure the full version number is always unique on Artifactory.
 
 MajorVersion: 18
-MinorVersion: 2
+MinorVersion: 3
 #PatchVersion: Auto incremented by giri, not manually settable
