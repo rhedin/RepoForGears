@@ -4,6 +4,9 @@ Dependencies:
   Name: VSWhere
   Version: 2.1.4
 - Group: Dependencies
+  Name: APIHelper
+  Version: 1
+- Group: Dependencies
   Name: ComponentAPI
   Version: 5
 - Group: Dependencies
