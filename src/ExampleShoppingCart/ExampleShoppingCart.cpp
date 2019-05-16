@@ -1,5 +1,6 @@
 #include "ExampleShoppingCart.h"
 #include "Version.h"
+#include "Gears.h"
 #include "ShoppingCart.h"
 #include <iostream>
 
@@ -22,6 +23,9 @@ APIResult GEARS_API Component_OnStart(_In_ APIManager_v5* api_manager, _In_ Nati
   //Using the specified api_manager variable, this component can request access
   //to APIs that have been registered with Gears.
 
+  //The Gears class will take care of requesting APIs for you. See Gears.h for more details.
+  Gears::InitializeAPIs(api_manager, proxy_handle);
+
   return kAPIResult_GeneralSuccess;
 }
 
@@ -29,6 +33,10 @@ APIResult GEARS_API Component_OnStop()
 {
   //GEARS NOTE: Use this function to perform "last chance" functionality.
   //All components are still accessible.
+
+  //Release all APIs and set them to nullptr.
+  Gears::ReleaseAPIs();
+
   return kAPIResult_GeneralSuccess;
 }
 

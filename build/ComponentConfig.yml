@@ -26,6 +26,8 @@ Dependencies:
   DependsOn:
   - Name: Library
   Dependencies:
+  - Name: APIHelper
+    Version: 1
   - Name: ComponentAPI
     Version: 5
   UUID: e074f1b9-c66c-4507-a563-09605f4cff93
@@ -70,5 +72,5 @@ Dependencies:
   - Name: ComponentAPI
     Version: 5
   UUID: a64997cc-611c-499f-821d-7d9fece7cfe8
-YmlVersion: 2
+YmlVersion: 3
 UsingPropertyFiles: true

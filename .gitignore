@@ -37,3 +37,6 @@ include/Resources/Version.h
 *.suo
 *.user
 *.opensdf
+
+# IncrediBuild cache
+PredictedInputCache*.dat
