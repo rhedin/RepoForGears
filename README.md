@@ -9,16 +9,15 @@ Example
 The *ExampleShoppingCartAPI* can be accessed from your Gears Component that you create through Gears Studio. The tutorial will walk you through how to create a new component and how to add *ExampleShoppingCartAPI* as a dependency. Once the component is created you can simply request *ExampleShoppingCartAPI* from Gears.
 
 ```cpp
-ExampleShoppingCartAPI_v1* g_shopping_cart_api = nullptr;
-api_manager->RequestAPI(ExampleShoppingCartAPI_Handle, 1, (void**)&g_shopping_cart_api);
+Gears::InitializeAPIs(api_manager, proxy_handle);
 ```
 
 After requesting the API, you can easily make calls into the component.
 
 ```cpp
-g_shopping_cart_api->AddItem("Milk", 3.59f);
-g_shopping_cart_api->AddItem("Bread", 1.99f);
-g_shopping_cart_api->AddItem("Chicken", 5.20f);
+Gears::API::ExampleShoppingCartAPIv1()->AddItem("Milk", 3.59f);
+Gears::API::ExampleShoppingCartAPIv1()->AddItem("Bread", 1.99f);
+Gears::API::ExampleShoppingCartAPIv1()->AddItem("Chicken", 5.20f);
 ```
 
 In the tutorial, the console window will log calls to the API to let you know they're being called successfully.
