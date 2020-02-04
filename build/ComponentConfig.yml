@@ -68,9 +68,9 @@ Dependencies:
   - Name: Library
   Dependencies:
   - Name: GTest
-    Version: 1.6.1
+    Version: 1.6.2
   - Name: ComponentAPI
     Version: 5
   UUID: a64997cc-611c-499f-821d-7d9fece7cfe8
-YmlVersion: 3
+YmlVersion: 6
 UsingPropertyFiles: true
