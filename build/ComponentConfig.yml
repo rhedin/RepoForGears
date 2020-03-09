@@ -1,5 +1,5 @@
 Name: ExampleShoppingCart
-GitRemoteUrl: ''
+GitRemoteUrl: file:///$Software\Microsoft\Windows\CurrentVersion\Uninstall\Bohemia Interactive Simulations Gears Studio$InstDir$/Gears Studio/bin/ExampleShoppingCart
 CreatedAPIs:
 - ExampleShoppingCartAPI
 ImplementedAPIs:
