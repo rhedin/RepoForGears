@@ -7,6 +7,9 @@ ImplementedAPIs:
   Version: 5
 - Name: ExampleShoppingCartAPI
   Version: 1
+ExplicitDependencies:
+- Name: APIHelper
+  Version: 1
 Dependencies:
 - Project: Component
   Type: DLL
@@ -72,5 +75,5 @@ Dependencies:
   - Name: ComponentAPI
     Version: 5
   UUID: a64997cc-611c-499f-821d-7d9fece7cfe8
-YmlVersion: 6
+YmlVersion: 7
 UsingPropertyFiles: true
