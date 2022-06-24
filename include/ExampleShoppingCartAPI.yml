@@ -1,8 +1,13 @@
 Alias: ExampleShoppingCartAPI
 Version:
 - 1
+- 2
 Includes:
 - Version: 1
+  Items:
+  - Name: CoreAPI
+    Version: 6
+- Version: 2
   Items:
   - Name: CoreAPI
     Version: 6
@@ -10,6 +15,11 @@ ItemOrdering:
 - Version: 1
   Functions:
   - AddItem
+- Version: 2
+  Functions:
+  - AddItem
+  - GetTotalPrice
+  - ClearItems
 Functions:
 - Name: "AddItem"
   Version: "1"
@@ -32,6 +42,33 @@ Functions:
     Description:
     - The price of the item.
     Annotation: "_In_"
+- Name: "GetTotalPrice"
+  Version: "2"
+  Description:
+  - Calculate the shopping cart total
+  Return:
+    Type: "APIResult"
+    Description:
+    - The result of the function.  (Useful description?)
+  Parameters:
+  - Name: "total_price"
+    Type: "float32_t"
+    Pointer: true
+    Description:
+    - Out parameterwhich gets set to the total price of the cart.
+    Annotation: "_Out_"
+- Name: "ClearItems"
+  Version: "2"
+  Description:
+  - Clear the shopping cart.
+  Return:
+    Type: "APIResult"
+    Description:
+    - The result of the function.  (Required by editor.  Not useful for humans.)
 ConvertedStructUnderscores: true
 ConvertedRequiredVersions: true
 GeneratingSHA: true
+SHAExcludesComments: true
+OldShas:
+- Version: 1
+  SHA: 18ba01c81fe81cc7579427af6ad219e12aa7e82d

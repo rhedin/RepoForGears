@@ -1,3 +1,18 @@
+/*
+*
+* Copyright(c) 2022 Bohemia Interactive Simulations k.s.
+* http://www.bisimulations.com
+*
+* For information about the licensing and copyright of this software please
+* contact Bohemia Interactive Simulations k.s. at contact @ bisimulations.com.
+*
+*/
+
+#ifndef EXAMPLESHOPPINGCART_API_H
+#define EXAMPLESHOPPINGCART_API_H
+
+#include <CoreAPI.h>
+
 /////////////////////////////////////
 /////////////////////////////////////
 /////////////////////////////////////
@@ -7,11 +22,6 @@
 /////////////////////////////////////
 /////////////////////////////////////
 /////////////////////////////////////
-
-#ifndef EXAMPLESHOPPINGCART_API_H
-#define EXAMPLESHOPPINGCART_API_H
-
-#include <CoreAPI.h>
 
 /**
  API Version:       ExampleShoppingCart API v1
@@ -41,6 +51,53 @@ typedef struct ExampleShoppingCartAPI_v1
 } ExampleShoppingCartAPI_v1;
 
 static const char* ExampleShoppingCartAPI_SHA_v1 = "18ba01c81fe81cc7579427af6ad219e12aa7e82d";
+
+/**
+ API Version:       ExampleShoppingCart API v2
+
+ New Functions:
+ GetTotalPrice - 
+ ClearItems - 
+
+ No functions were updated.
+
+ No functions were removed.
+ */
+
+/**
+  @brief GetTotalPrice v2
+         Calculate the shopping cart total
+
+  @param total_price
+         Out parameterwhich gets set to the total price of the cart.
+
+  @return APIResult
+          The result of the function.  (Useful description?)
+  */
+
+typedef APIResult (GEARS_API *ExampleShoppingCart_GetTotalPrice_Func_v2)(_Out_ float32_t* total_price);
+
+/**
+  @brief ClearItems v2
+         Clear the shopping cart.
+
+  @return APIResult
+          The result of the function.  (Required by editor.  Not useful for humans.)
+  */
+
+typedef APIResult (GEARS_API *ExampleShoppingCart_ClearItems_Func_v2)();
+
+//Unchanged function definitions:
+typedef ExampleShoppingCart_AddItem_Func_v1 ExampleShoppingCart_AddItem_Func_v2;
+
+typedef struct ExampleShoppingCartAPI_v2
+{
+  ExampleShoppingCart_AddItem_Func_v2   AddItem;
+  ExampleShoppingCart_GetTotalPrice_Func_v2   GetTotalPrice;
+  ExampleShoppingCart_ClearItems_Func_v2   ClearItems;
+} ExampleShoppingCartAPI_v2;
+
+static const char* ExampleShoppingCartAPI_SHA_v2 = "4bbac783e1d2593c04b3bca5037ba14f4d070160";
 
 static const char* ExampleShoppingCartAPI_Handle = "ExampleShoppingCartAPI";
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Resources">
+      <UniqueIdentifier>{3394DBFB-9FAA-D991-E821-65B35477AA19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ExampleShoppingCartUnitTest">
+      <UniqueIdentifier>{96E7E931-02A1-54DC-8B00-6FB6F7B80A4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ExampleShoppingCartUnitTest">
+      <UniqueIdentifier>{3A41852C-A624-946C-AF27-C2A81B8A5ABD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\ExampleShoppingCartUnitTest\ExampleShoppingCartUnitTest.h">
+      <Filter>include\ExampleShoppingCartUnitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Resources\Version.h">
+      <Filter>include\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Resources\resource.h">
+      <Filter>include\Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ExampleShoppingCartUnitTest\ExampleShoppingCartUnitTest.cpp">
+      <Filter>src\ExampleShoppingCartUnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ExampleShoppingCartUnitTest\GTest.cpp">
+      <Filter>src\ExampleShoppingCartUnitTest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\include\Resources\Resources.rc">
+      <Filter>include\Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

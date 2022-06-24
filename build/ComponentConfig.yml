@@ -1,5 +1,10 @@
 Name: ExampleShoppingCart
 GitRemoteUrl: file:///$Software\Microsoft\Windows\CurrentVersion\Uninstall\Bohemia Interactive Simulations Gears Studio$InstDir$/Gears Studio/bin/ExampleShoppingCart
+Compilers:
+- vs2017
+CompilerToolsets:
+  vs2017:
+  - 14.16
 CreatedAPIs:
 - ExampleShoppingCartAPI
 ImplementedAPIs:
@@ -7,6 +12,8 @@ ImplementedAPIs:
   Version: 5
 - Name: ExampleShoppingCartAPI
   Version: 1
+- Name: ExampleShoppingCartAPI
+  Version: 2
 ExplicitDependencies:
 - Name: APIHelper
   Version: 1
@@ -14,7 +21,7 @@ Dependencies:
 - Project: Component
   Type: DLL
   Language: C++
-  Deploy: Component
+  Deploy: InternalComponent
   ExtraWarnings: true
   TreatWarningsAsErrors: true
   GlobalDefinitions:
@@ -71,9 +78,9 @@ Dependencies:
   - Name: Library
   Dependencies:
   - Name: GTest
-    Version: 1.6.2
+    Version: 1.10.0
   - Name: ComponentAPI
     Version: 5
   UUID: a64997cc-611c-499f-821d-7d9fece7cfe8
-YmlVersion: 7
+YmlVersion: 8
 UsingPropertyFiles: true

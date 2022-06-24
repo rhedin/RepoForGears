@@ -107,3 +107,13 @@ APIResult GEARS_API ExampleShoppingCart_AddItem(_In_ const char* item_name, _In_
   return kAPIResult_GeneralSuccess;
 }
 
+APIResult GEARS_API ExampleShoppingCart_GetTotalPrice(_Out_ float32_t* total_price)
+{
+  return kAPIResult_GeneralSuccess;
+}
+
+APIResult GEARS_API ExampleShoppingCart_ClearItems()
+{
+  return kAPIResult_GeneralSuccess;
+}
+

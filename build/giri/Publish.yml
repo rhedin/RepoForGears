@@ -1,0 +1,11 @@
+Artifactory: http://devops.bisimulations.com/artifactory
+BinaryRepo: staging
+Repo: Gears
+Dependencies:
+- Group: Dependencies
+  Name: ExampleShoppingCartAPI
+  Version: 2
+  SubDependencies:
+  - Group: Dependencies
+    Name: CoreAPI
+    Version: 6

@@ -44,4 +44,19 @@ GEARS_EXPORT void GEARS_API RegisterAPI_v1(APIManager_RegisterAPI_Func_v1 regist
 
     register_api(ExampleShoppingCartAPI_Handle, &api_info);
   }
+
+  //Register ExampleShoppingCartAPI_v2
+  {
+    static ExampleShoppingCartAPI_v2 api;
+    APIInfo_v1 api_info;
+
+    api.AddItem = ExampleShoppingCart_AddItem;
+    api.GetTotalPrice = ExampleShoppingCart_GetTotalPrice;
+    api.ClearItems = ExampleShoppingCart_ClearItems;
+
+    api_info._api = &api;
+    api_info._version = 2;
+
+    register_api(ExampleShoppingCartAPI_Handle, &api_info);
+  }
 }

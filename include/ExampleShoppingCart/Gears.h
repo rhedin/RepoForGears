@@ -131,6 +131,7 @@ public:
   START_MY_APIS(Gears)
   REGISTER_MY_API(ComponentAPI, 5)
   REGISTER_MY_API(ExampleShoppingCartAPI, 1)
+  REGISTER_MY_API(ExampleShoppingCartAPI, 2)
   END_MY_APIS()
 
 private:

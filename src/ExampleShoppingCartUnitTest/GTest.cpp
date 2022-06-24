@@ -1,8 +1,11 @@
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
 int main(int argc, char** argv)
 {
-  testing::InitGoogleTest(&argc, argv);
+  //Since Google Mock depends on Google Test,
+  //InitGoogleMock() will invoke InitGoogleTest() internally.
+  testing::InitGoogleMock(&argc, argv);
   auto gtest_result = RUN_ALL_TESTS();
   //If not specifying an output xml file
   if (testing::GTEST_FLAG(output).empty())

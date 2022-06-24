@@ -24,4 +24,7 @@ APIResult GEARS_API Component_GetVersion(_Inout_ int32_t* version_length, _Out_o
 
 APIResult GEARS_API ExampleShoppingCart_AddItem(_In_ const char* item_name, _In_ float32_t price);
 
+APIResult GEARS_API ExampleShoppingCart_GetTotalPrice(_Out_ float32_t* total_price);
+APIResult GEARS_API ExampleShoppingCart_ClearItems();
+
 #endif

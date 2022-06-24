@@ -1,8 +1,9 @@
+Artifactory: http://devops.bisimulations.com/artifactory
 Repo: Gears
 Dependencies:
 - Group: Dependencies
   Name: VSWhere
-  Version: 2.1.4
+  Version: 2.1.4.1
 - Group: Dependencies
   Name: APIHelper
   Version: 1
@@ -14,4 +15,4 @@ Dependencies:
   Version: 6
 - Group: Dependencies
   Name: GTest
-  Version: 1.6.2
+  Version: 1.10.0
